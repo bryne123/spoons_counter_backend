@@ -71,7 +71,7 @@ app.post("/pub", async (req, res) => {
 
   console.log("adding", pub, req.body);
   await pub.save();
-  res.send({ message: "New pub inserted." });
+  res.send({ message: "New pub added." });
 });
 
 app.delete("/:id", async (req, res) => {
@@ -95,7 +95,7 @@ app.post("/user", async (req, res) => {
 
   console.log("adding", user, req.body);
   await user.save();
-  res.send({ message: "New user inserted." });
+  res.send({ message: "New user added." });
 });
 
 // starting the server
