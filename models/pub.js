@@ -1,9 +1,12 @@
 const mongoose = require("mongoose");
 
 const pubSchema = mongoose.Schema({
-  name: String,
-  location: String,
-  visited: Boolean,
+  PubName: String,
+  Street: String,
+  Locality: String,
+  Region: String,
+  Postcode: String,
+  Visited: Boolean,
 });
 
 module.exports.Pub = mongoose.model("Pub", pubSchema);
